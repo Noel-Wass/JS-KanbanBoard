@@ -25,6 +25,10 @@ const create_item = () => {
 
     item.addEventListener('dragstart', (event) => {
         event.dataTransfer.setData('text', event.target.id)
+    });
+
+    item.addEventListener('dragend', event => {
+        event.dataTransfer.clearData('text');
     })
 };
 
