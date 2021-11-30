@@ -18,7 +18,7 @@ add_btn.addEventListener('click', () => {
 });
 
 const create_item = () => {
-    const item = document.createElement("div");
+    const item = document.createElement('div');
     item.classList.add('item');
     item.id  = 'item-' + order;
     item.draggable = true;
@@ -29,7 +29,11 @@ const create_item = () => {
 
     item.addEventListener('dragend', event => {
         event.dataTransfer.clearData('text');
-    })
+    });
+
+    const input = document.createElement('input');
+    item.append(input);
+
 };
 
 document.querySelectorAll('.drop').forEach(element => {
