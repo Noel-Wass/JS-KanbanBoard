@@ -58,6 +58,7 @@ document.querySelectorAll('.drop').forEach(element => {
     element.addEventListener('drop', (event) => {
         event.preventDefault();
         const id = event.dataTransfer.getData('text');
-        element.appendChild(document.getElementById(id));
+        const elemToAdd = document.getElementById(id);
+        element.appendChild(elemToAdd);
     })
 });
