@@ -48,6 +48,8 @@ const create_item = () => {
         }
     })
 
+    item.append(save_btn);
+
 };
 
 document.querySelectorAll('.drop').forEach(element => {
