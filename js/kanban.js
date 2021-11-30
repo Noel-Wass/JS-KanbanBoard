@@ -48,7 +48,9 @@ const create_item = () => {
         }
     })
 
-    return item.appendChild(save_btn);
+    item.appendChild(save_btn);
+
+    return item;
 
 };
 
