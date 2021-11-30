@@ -48,7 +48,7 @@ const create_item = () => {
         }
     })
 
-    item.append(save_btn);
+    return item.append(save_btn);
 
 };
 
