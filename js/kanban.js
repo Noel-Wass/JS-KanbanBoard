@@ -20,7 +20,7 @@ add_btn.addEventListener('click', () => {
 const create_item = () => {
     const item = document.createElement('div');
     item.classList.add('item');
-    item.id  = 'item-' + order;
+    item.id = 'item-' + order;
     item.draggable = true;
 
     item.addEventListener('dragstart', (event) => {
@@ -37,6 +37,9 @@ const create_item = () => {
     const save_btn = document.createElement('button');
     save_btn.innerHTML = 'Save';
 
+    save_btn.addEventListener('click', () => {
+
+    })
 
 };
 
