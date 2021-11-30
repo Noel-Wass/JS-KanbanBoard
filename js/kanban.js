@@ -34,6 +34,10 @@ const create_item = () => {
     const input = document.createElement('input');
     item.append(input);
 
+    const save_btn = document.createElement('button');
+    save_btn.innerHTML = 'Save';
+
+
 };
 
 document.querySelectorAll('.drop').forEach(element => {
