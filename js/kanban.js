@@ -32,7 +32,7 @@ const create_item = () => {
     });
 
     const input = document.createElement('input');
-    item.append(input);
+    item.appendChild(input);
 
     const save_btn = document.createElement('button');
     save_btn.innerHTML = 'Save';
@@ -48,7 +48,7 @@ const create_item = () => {
         }
     })
 
-    return item.append(save_btn);
+    return item.appendChild(save_btn);
 
 };
 
