@@ -63,4 +63,9 @@ document.querySelectorAll('.drop').forEach(element => {
         //Code could have used instead
         event.eventTarget.appendChild(elemToAdd);
     })
+
+    element.addEventListener('dragover', (event) => {
+        event.preventDefault();
+
+    })
 });
